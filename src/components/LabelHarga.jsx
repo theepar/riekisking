@@ -1,8 +1,8 @@
-function labelHarga(props){
-    return(
-        <>
-        <p>Rp.{props.toLocalString('id-ID')}</p>
-        </>
-    )
+function LabelHarga({props}) {
+  return (
+    <>
+      <p>Rp.{props.toLocalString("id-ID")}</p>
+    </>
+  );
 }
-export default labelHarga
+export default LabelHarga;

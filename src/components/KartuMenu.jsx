@@ -1,11 +1,11 @@
-import Lharga from 'LabelHarga.jsx'
+import LabelHarga from './LabelHarga.jsx'
 
-function KartuMenu({nama,harga,kategori = 'Makanan'}) {
+function KartuMenu({nama,kategori = 'Makanan',harga}) {
   return (
     <div className="kartu">
       <h3>{nama}</h3>
-      <Lharga>{harga}</Lharga>
-      <p>{kategori ? '' : 'Makanan'}</p>
+      <p>{kategori}</p>
+      <LabelHarga nilai={harga}></LabelHarga>
     </div>
   );
 }
